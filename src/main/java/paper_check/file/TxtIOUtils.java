@@ -41,22 +41,7 @@ public class TxtIOUtils {
      * 写入txt文件
      * 传入内容、文件全路径名，将内容写入文件并换行
      */
-   /* public static void writeTxt(double txtElem,String txtPath){
-        String str = Double.toString(txtElem);
-        File file = new File(txtPath);
-        FileWriter fileWriter = null;
-        try {
-            fileWriter = new FileWriter(file, true);
-            fileWriter.write(str, 0, (str.length() > 3 ? 4 : str.length()));
-            fileWriter.write("\r\n");
-            // 关闭资源
-            fileWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
-    */
     public static void writeTxt(double result, String orig1, String orig2, String location) {
         try {
             FileWriter creat = new FileWriter(location);
